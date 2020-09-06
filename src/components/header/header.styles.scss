@@ -1,0 +1,48 @@
+.header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    a {
+        z-index: 9;
+        color: white;
+
+    }
+
+    p {
+        position: relative;
+        top: 29px;
+        left: 18%;
+        font-size: 18px;
+        z-index: 9;
+        color: white;
+
+
+    }
+
+    .logo-container {
+        height: 100%;
+        width: 70px;
+        padding: 10px;
+        z-index: 9;
+    }
+
+    .options {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        z-index: 9;
+        
+
+        .option {
+            padding: 10px 15px;
+            cursor: pointer;
+            z-index: 9;
+            color: white;
+        }
+    }
+}

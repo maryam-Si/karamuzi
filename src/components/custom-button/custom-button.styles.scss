@@ -1,0 +1,35 @@
+.custom-button {
+   
+    height: 50px;
+    letter-spacing: 0.5px;
+    line-height: 17px;
+    padding: 0 13px 0 17px;
+    font-size: 14px;
+    background-color: #1f0452;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    align-content: center;
+    margin: 14px;
+    width: 200px;
+
+  
+    &:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+    }
+  
+    &.peygiry {
+        max-width: 200px;
+      background-color: #4286f400;
+      color: rgb(15, 15, 15);
+      border: #1f0452 solid 2px ;
+  
+      &:hover {
+        background-color: #f5f7fcaf;
+        border: none;
+      }
+    }
+  }

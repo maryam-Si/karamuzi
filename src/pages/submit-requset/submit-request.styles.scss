@@ -1,0 +1,109 @@
+.submit-request {
+    background-image: url('../../assets/Path.svg');
+    background-size: 20%;
+    background-repeat: no-repeat;
+
+    p {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .font {
+        font-size: 15px !important;
+        font-weight: 500 !important;
+    }
+
+    .form-container {
+        width: 50%;
+        margin: auto;
+        text-align: right;
+
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin: 13px;
+    }
+
+}
+.but{
+    left: 50%;
+    
+}
+.ui.form {
+    position: relative;
+    width: 63%;
+}
+
+.verification {
+    display: flex;
+    width: 58%;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.header-background {
+    background-color: #35db80;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    top: -95px;
+}
+
+.ui.active.modal {
+
+    width: 33%;
+    height: 300px;
+    text-align: center;
+    display: flex;
+}
+
+.ui.modal>.actions {
+    background: #f9fafb;
+    padding: 1rem 1rem;
+    border-top: 1px solid rgba(34, 36, 38, .15);
+    text-align: right;
+    display: flex;
+}
+
+.ui.modal .actions>.button {
+    margin-left: .75em;
+    position: relative;
+    top: 6px;
+    left: 50%;
+    width: 105px;
+    height: 37px;
+    padding: 7px;
+}
+
+.ui.medium.image,
+.ui.medium.images .image,
+.ui.medium.images img,
+.ui.medium.images svg {
+    width: 220px;
+    height: auto;
+    font-size: 1rem;
+}
+
+.ui.image {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    background-color: transparent;
+    top: 12px;
+    right: 44%;
+}
+
+.but {
+    padding: -4px;
+    left: 50%;
+    position: relative;
+    display: flex;
+    width: 167px;
+    height: 42px;
+    justify-content: space-between;
+    top: 10px;
+}
