@@ -3,15 +3,16 @@ import "../school-info/school-info.styles.scss";
 import { Button ,Modal} from "semantic-ui-react";
 
 const SchoolInfo = ({
-  SchoolName,
-  Grade,
-  Manager,
-  PhoneNumber,
-  Address,
-  PostalCode,
-  id
+  name,
+  grade,
+  manager,
+  phone,
+  address,
+  postalCode,
+  
 }) => {
   const [open, setOpen] = useState(false);
+  console.log('name:'+ name)
   return (
     <>
       <Modal
@@ -29,12 +30,12 @@ const SchoolInfo = ({
           ذیل می باشید:
         </p>
         <hr />
-        <div>نام مدرسه: {SchoolName}</div>
-        <div>مقطع: {Grade}</div>
-        <div>نام مدیر: {Manager}</div>
-        <div>شماره موبایل مدیر: {PhoneNumber}</div>
-        <div>آدرس مدرسه: {Address}</div>
-        <div>کدپستی: {PostalCode}</div>
+        <div>نام مدرسه: {name}</div>
+        <div>مقطع: {grade}</div>
+        <div>نام مدیر: {manager}</div>
+        <div>شماره موبایل مدیر: {phone}</div>
+        <div>آدرس مدرسه: {address}</div>
+        <div>کدپستی: {postalCode}</div>
         <hr />
         <div className="buttons">
           <Button basic color="teal" type="submit" >

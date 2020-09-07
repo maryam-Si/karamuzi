@@ -18,13 +18,25 @@ const SubmitRequest = ({History})=>{
     const [flag, setFlag] = useState(true)
     const [info, setInfo]= useState([]);
     useEffect(()=>{
-        fetch('https://my-json-server.typicode.com/arian94/samizco/db').then((response)=>
+        
+        fetch('http://localhost:3000/schools').then((response)=>
         response.json().then((data)=>{
-            setInfo(data['database']);
+            setInfo(data);
+            console.log("response: " +response)
         })
-    );
+    ).catch(err => {
+        // Do something for an error here
+        console.log("Error Reading data " + err);
+      });
     },[]);
-    const inf = info.filter(item=> item.id == school);
+
+    useEffect(() => {
+        
+     console.log(parseInt(school))
+    }, [info,school])
+    
+    
+
     const history = useHistory();
     function handleClick() {
         history.push("/");
@@ -36,7 +48,9 @@ const SubmitRequest = ({History})=>{
         
         
         <Modal
-        onClose={() => setOpen(false)}
+        onClose = {
+            () => setOpen(false)
+        }
         onOpen={() => setOpen(true)}
         open={open}
         className='modal'
@@ -152,7 +166,10 @@ const SubmitRequest = ({History})=>{
         :undefined
   }
             {input1 ?
-                <SchoolInfo {...inf}/>
+                < SchoolInfo {
+                    ...info.find(i => i.id === parseInt(school))
+                }
+                />
             :undefined}
         </div>
     </>
