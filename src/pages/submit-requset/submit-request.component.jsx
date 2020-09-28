@@ -41,6 +41,7 @@ const SubmitRequest = ({History})=>{
     function handleClick() {
         history.push("/");
       }
+   
 
     return(
         
@@ -125,6 +126,7 @@ const SubmitRequest = ({History})=>{
       
         <div className='submit-request'>
             
+            
         
   
             <div className='header-background'></div>  
@@ -137,20 +139,23 @@ const SubmitRequest = ({History})=>{
                 <Form.Field>
                     <label className='font'>کد مدرسه</label>
                     <input type="text"
+                   
+                    
                      className="control"
                       required
                       value={school}
-                      onChange={(e)=>setSchool(e.target.value)}
-                       pattern="[0-9]*"/>
+                      onChange={(e)=>setSchool(e.target.value.replace(/\D/,''))}
+                      pattern="[0-9]+"/>
                 </Form.Field>
                 <Form.Field>
                     <label className='font'>شماره موبایل</label>
                     <input type="text"
+                    
                       className="control"
                       value={mobile}
-                      onChange={(e)=>setMobile(e.target.value)}
+                      onChange={(e)=>setMobile(e.target.value.replace(/\D/,''))}
                       required
-                       pattern="[0-9]*" />
+                      pattern="[0-9]+"/>
                 </Form.Field>
              
                 
